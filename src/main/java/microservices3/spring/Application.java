@@ -1,6 +1,5 @@
 package microservices3.spring;
 
-import microservices3.spring.model.Employee;
 import microservices3.spring.repositories.EmployeeRepostiory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
@@ -19,10 +18,6 @@ public class Application implements CommandLineRunner {
 
     @Override
     public void run(String... args) {
-        Employee employee = new Employee();
-        employee.setFirstName("Rafael ");
-        employee.setLastName("La torre");
-        employee.setEmailId("rafaTorre@gmail.com");
-        repostiory.save(employee);
+
     }
 }
